@@ -1,0 +1,36 @@
+ul[role] {
+	display: flex;
+	column-gap: 10px;
+
+	li {
+		border: 1px solid #fe5f1e;
+		border-radius: 50%;
+		cursor: pointer;
+
+		a {
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			color: #fe5f1e;
+		}
+
+		&.selected {
+			background-color: #fe5f1e;
+			font-weight: 700;
+
+			a {
+				color: #eee;
+			}
+		}
+
+		&:hover {
+			background-color: #fe5f1e;
+
+			a {
+				color: #eee;
+			}
+		}
+	}
+}
